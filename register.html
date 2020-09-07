@@ -12,34 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-
 <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyAkk694Ikg77iGag0pEEYr_qMwvzx3LBKo",
-            authDomain: "namtran87-0311.firebaseapp.com",
-            databaseURL: "https://namtran87-0311.firebaseio.com",
-            projectId: "namtran87-0311",
-            storageBucket: "namtran87-0311.appspot.com",
-            messagingSenderId: "672637435645",
-            appId: "1:672637435645:web:d595fe6f40606e98aa8894"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
     <!--register form-->
     <div class="container-fluid bg">
         <div class="row justify-content-center">
@@ -48,7 +21,7 @@
                     <div class="header">
                         <h3>Registration Form</h3>
                     </div>
-                    <div class="Form Group">
+                    <div class="Form Group" id="fgroup">
                         <label for="First Name">First Name</label>
                         <input type="text" class="form-control" id="fname" placeholder="First Name">
                     </div>
@@ -74,7 +47,7 @@
                         <label class="form-check-label" for="rememberMe2">Please
                            Reiciendis deserunt eos dignissimos fugit, tenetur minima odio?</label>
                     </div>
-                    <button type="submit" class="btn btn-success btn-block my-3" onclick="addData()">Register</button>
+                    <input type="button" class="btn btn-success btn-block my-3" value="Register" onclick="addData()">
                 </form>
             </div>
 
@@ -82,6 +55,34 @@
     </div>
     <!--register-->
     <script src="./register.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAkk694Ikg77iGag0pEEYr_qMwvzx3LBKo",
+            authDomain: "namtran87-0311.firebaseapp.com",
+            databaseURL: "https://namtran87-0311.firebaseio.com",
+            projectId: "namtran87-0311",
+            storageBucket: "namtran87-0311.appspot.com",
+            messagingSenderId: "672637435645",
+            appId: "1:672637435645:web:d595fe6f40606e98aa8894"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
 </body>
 
 </html>
